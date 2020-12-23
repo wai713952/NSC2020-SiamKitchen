@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Pan
+  - Egg1
+  - Egg2
+  - Fire
   layers:
   - Default
   - TransparentFX
