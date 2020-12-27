@@ -8,6 +8,8 @@ TagManager:
   - Egg1
   - Egg2
   - Fire
+  - Food
+  - Pestle
   layers:
   - Default
   - TransparentFX

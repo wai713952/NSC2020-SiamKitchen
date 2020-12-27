@@ -8,6 +8,8 @@ public class food : MonoBehaviour
     
     [SerializeField]
     Ripeness currentStage = Ripeness.Raw; //ระดับความสกปัจจุบัน
+    [SerializeField]
+    bool isStir = false;
 
     [Header("Timer")]
     [SerializeField]
