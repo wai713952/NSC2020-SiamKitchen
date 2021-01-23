@@ -19,8 +19,14 @@ public class singlegrap : MonoBehaviour
         isPick = false;     //set picking boolean to false: at start, player not holding anything
     }
 
-    public void Update()
+    public void FixedUpdate() 
     {
+        checkholding();
+    }
+
+    public void Update()
+    {                
+
         pickRay = new Ray (transform.position, transform.forward);                                  //setting up raycast (position of ray , direction of ray)
         if(Physics.Raycast(pickRay,out hitInfo, rayRange, mask, QueryTriggerInteraction.Ignore))    //(rayname , hit what , distance , what it can interact(layer) , aim to hit collider(ignore trigger))
         {
@@ -46,7 +52,11 @@ public class singlegrap : MonoBehaviour
             grapHolder.GetChild(0).GetComponent<Collider>().attachedRigidbody.constraints = RigidbodyConstraints.None;     //unfreeze holding item's rotation and position
             grapHolder.GetChild(0).transform.parent = null;
         }
-        
+
+    }
+
+    public void checkholding()
+    {
         if(grapHolder.childCount == 0)
         {
             isPick = false;

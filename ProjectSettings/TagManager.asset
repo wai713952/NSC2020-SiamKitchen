@@ -11,6 +11,9 @@ TagManager:
   - spatula
   - pickablesingle
   - rice
+  - score panel
+  - order list
+  - serve window
   layers:
   - Default
   - TransparentFX
@@ -24,8 +27,8 @@ TagManager:
   - pourable
   - food
   - rice
-  - 
-  - 
+  - selectable
+  - window
   - 
   - 
   - 
